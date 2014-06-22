@@ -80,11 +80,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 # media deliver
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'TorrentSearcher/media')
 MEDIA_URL = '/media/'
 
 # static files (application js/img etc)
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'TorrentSearcher/static')
 STATIC_URL = '/static/'
 
 # List of finder classes that know how to find static files in
