@@ -1,0 +1,22 @@
+{
+  "name": "TorrentSearcher",
+  "version": "0.0.1",
+  "authors": [
+    "Sascha Häusler <saeschdivara@gmail.com>"
+  ],
+  "description": "Torrent Searcher with web ui",
+  "keywords": [
+    "torrent",
+    "server",
+    "search"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
