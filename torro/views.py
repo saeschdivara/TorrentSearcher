@@ -1,7 +1,8 @@
-from django.http.response import HttpResponse
 from django.shortcuts import render
 
 
 def home(request):
 
-    return HttpResponse()
+    return render(request, 'torro/base.html', {
+        'ANGULAR_APP': 'torro'
+    })
