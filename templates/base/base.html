@@ -23,7 +23,15 @@
 
     $script([
         '{{ STATIC_URL }}3rdparty/angularjs/angular.min.js',
-        '{{ STATIC_URL }}webapp/app.js',
+
+        {% block angular_js %}
+            {# ANGULAR FILES TO BE LOADED #}
+        {% endblock %}
+
+
+        {% block app %}
+            {# APP FILES TO BE LOADED #}
+        {% endblock %}
     ], function () {
         // when all is done, execute bootstrap angular application
         angular.bootstrap(document, ['{{ ANGULAR_APP }}']);
