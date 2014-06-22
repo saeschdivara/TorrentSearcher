@@ -1,4 +1,4 @@
-torro_app.controller('LoginController', ['$scope', '$routeParams', ($scope, $routeParams) ->
+torro_ui_app.controller('LoginController', ['$scope', '$routeParams', ($scope, $routeParams) ->
 
     console.log($scope)
     console.log($routeParams)

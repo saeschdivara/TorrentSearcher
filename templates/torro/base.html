@@ -9,6 +9,8 @@
 
 
 {% block app %}
-    '{{ STATIC_URL }}webapp/app.js'
+    '{{ STATIC_URL }}webapp/ui/ui.js',
+    '{{ STATIC_URL }}webapp/ui/controller/login_controller.js',
+    '{{ STATIC_URL }}webapp/app.js',
     {# APP FILES TO BE LOADED #}
 {% endblock %}
