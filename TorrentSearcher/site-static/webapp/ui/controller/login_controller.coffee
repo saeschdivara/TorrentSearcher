@@ -1,7 +1,4 @@
-torro_ui_app.controller('LoginController', ['$scope', '$routeParams', ($scope, $routeParams) ->
-
-    console.log($scope)
-    console.log($routeParams)
+torro_ui_app.controller('LoginController', ['$scope', '$routeParams', '$location', ($scope, $routeParams, $location) ->
 
     ######################
     ## LOGIN CONTROLLER ##
@@ -10,11 +7,14 @@ torro_ui_app.controller('LoginController', ['$scope', '$routeParams', ($scope, $
         ########################
         ## PRIVATE PROPERTIES ##
         ########################
-        
+
         
         #######################
         ## PUBLIC PROPERTIES ##
         #######################
+
+        $userName: ''
+        $userPassword: ''
         
         
         ####################
@@ -24,12 +24,33 @@ torro_ui_app.controller('LoginController', ['$scope', '$routeParams', ($scope, $
         constructor: () ->
             ###
             ###
-     
+
+            @$userName = ''
+            @$userPassword = ''
+
+
+        onLogin: () =>
+            ###
+            ###
+
+            console.log(@$userName)
+            console.log(@$userPassword)
+
         #####################
         ## PRIVATE METHODS ##
         #####################
 
 
     controller = new LoginController()
+
+    #####################
+    ## SCOPE VARIABLES ##
+    #####################
+
+    $scope.name = 'LoginController'
+
+    #######################
+    ## RETURN CONTROLLER ##
+    #######################
     return controller
 ])
