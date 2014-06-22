@@ -1,11 +1,14 @@
-{% extend 'base/base.html' %}
+{% extends 'base/base.html' %}
 
 
 {% block angular_js %}
+    '{{ STATIC_URL }}3rdparty/angularjs/angular-route.min.js',
+    '{{ STATIC_URL }}3rdparty/angularjs/angular-resource.min.js',
     {# ANGULAR FILES TO BE LOADED #}
 {% endblock %}
 
 
 {% block app %}
+    '{{ STATIC_URL }}webapp/app.js'
     {# APP FILES TO BE LOADED #}
 {% endblock %}
